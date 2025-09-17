@@ -93,6 +93,12 @@ Task:
 2) Use spread syntax with Math.min(...) and Math.max(...) to find extremes.
 3) Display both values.
 */
+const nums = [1, 2, 4, 3, 7, 6, 5, 9, 8, 0];
+console.log("Length of nums arr:", nums.length)
+const min = Math.min(...nums);
+const max = Math.max(...nums);
+console.log("Min:", min)
+console.log("Max:", max)
 
 
 // ===================================================================
