@@ -21,6 +21,7 @@ Task:
 3) Add a setter updateGpa(newGpa) or use a set accessor for gpa that validates 0.0–4.0.
 4) Create an instance/object and output its attributes using the getter(s).
 */
+// student obj with initialized values, getters for fullName and gpa, setter for gpa
 const student = {
   firstName: "Ada",
   lastName: "Lovelace",
@@ -38,6 +39,7 @@ const student = {
   }
 };
 
+// Updating gpa value and logging the attributes of the student object
 student.updateGpa = 3.9
 console.log(student.fullName)
 console.log(student._gpa)
@@ -50,8 +52,11 @@ Task:
 1) Make an object used as a "map" (key → value), e.g., course codes → titles.
 2) Iterate over it with for...in and display each key and value.
 */
+
+// Object of course titles
 const courseTitles = { A101: "Intro", A201: "Data Structures" };
 
+// Iterating over the course codes and titles
 for (const key in courseTitles) {
   console.log(key, courseTitles[key])
 }
@@ -64,6 +69,8 @@ Task:
 1) Create a String object or plain string.
 2) Use .charAt(index) and .length to output characters and size.
 */
+
+// Finding the character at an index and the length of a string
 const str = "Advanced";
 console.log(str.charAt(0));
 console.log(str.charAt(2));
@@ -79,6 +86,8 @@ Task:
 2) Find and display the current day of month, month (0–11), and year.
 //    (Hint: getDate(), getMonth(), getFullYear() )
 */
+
+// Date object and its day, month, year
 const myDate = new Date();
 console.log("Day: " + myDate.getDate())
 console.log("Month:", myDate.getMonth() + 1)
@@ -93,6 +102,8 @@ Task:
 2) Use spread syntax with Math.min(...) and Math.max(...) to find extremes.
 3) Display both values.
 */
+
+// Array of numbers and the min and max and length of it
 const nums = [1, 2, 4, 3, 7, 6, 5, 9, 8, 0];
 console.log("Length of nums arr:", nums.length)
 const min = Math.min(...nums);
@@ -111,6 +122,8 @@ Task:
 3) Handle the error using try { ... } catch (e) { ... } finally { ... } and log messages
    in each block so you can see the flow of control.
 */
+
+// Try-catch-finally block trying to catch whether an argument in maxVal function is a non-empty array
 function maxVal(arr) {
   if (!Array.isArray(arr) || arr.length === 0) {
     throw new Error("Array must be non-empty.");
@@ -157,5 +170,16 @@ Given: const words = ["ban", "babble", "make", "flab"];
 3) For matches, log "<word> matches!".
 4) Display the words that matches the pattern.
 */
+
+// Regex pattern finding in a list of words. Pattern : ab
+const words = ["ban", "babble", "make", "flab"];
+const pattern = /ab/;
+
+words.forEach(word => {
+  if (pattern.test(word)) {
+    console.log(`${word} matches!`);
+  }
+});
+
 
 // End of Advance JavaScript Lab — good luck!

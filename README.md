@@ -211,11 +211,11 @@ array.forEach((value, index) => { /* ... */ });
 - Use `console.log()` to show your results in the browser Console.
 
 ## Checklist
-- [ ] I created an object with a **getter** and **setter**, and logged the results.
-- [ ] I made an object that works like a **map** and looped over it with `for...in`.
-- [ ] I used string `.charAt()` and `.length`.
-- [ ] I used `Date` to print day, month, and year (remember: month is 0–11).
-- [ ] I found **min** and **max** with the spread operator.
-- [ ] I handled an error using `try/catch/finally`.
-- [ ] I used a **regex** with `.test()` and `.forEach()` to find words containing `"ab"`.
-- [ ] My code runs without errors and has clear comments.
+- [yes] I created an object with a **getter** and **setter**, and logged the results.
+- [yes] I made an object that works like a **map** and looped over it with `for...in`.
+- [yes] I used string `.charAt()` and `.length`.
+- [yes] I used `Date` to print day, month, and year (remember: month is 0–11).
+- [yes] I found **min** and **max** with the spread operator.
+- [yes] I handled an error using `try/catch/finally`.
+- [yes] I used a **regex** with `.test()` and `.forEach()` to find words containing `"ab"`.
+- [yes] My code runs without errors and has clear comments.
