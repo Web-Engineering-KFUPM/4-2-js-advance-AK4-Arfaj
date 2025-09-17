@@ -111,6 +111,39 @@ Task:
 3) Handle the error using try { ... } catch (e) { ... } finally { ... } and log messages
    in each block so you can see the flow of control.
 */
+function maxVal(arr) {
+  if (!Array.isArray(arr) || arr.length === 0) {
+    throw new Error("Array must be non-empty.");
+  }
+  return arr[0];
+}
+
+try {
+  const x = maxVal([]);   // This will throw an err
+  console.log("x is:", x)
+} catch (e) {
+  console.log("You need to enter in an array!")
+} finally {
+  console.log("This is a finally block")
+}
+
+try {
+  const x = maxVal("Hello there");   // This will throw an err
+  console.log("x is:", x)
+} catch (e) {
+  console.log("You need to enter in an array!")
+} finally {
+  console.log("This is a finally block")
+}
+
+try {
+  const x = maxVal([1, 2, 3, 4]);   // This will not throw an err
+  console.log("x is:", x)
+} catch (e) {
+  // Handle or log the error here
+} finally {
+  console.log("This is a finally block")
+}
 
 
 // ===================================================================================
