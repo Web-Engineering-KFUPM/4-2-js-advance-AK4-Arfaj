@@ -79,6 +79,10 @@ Task:
 2) Find and display the current day of month, month (0–11), and year.
 //    (Hint: getDate(), getMonth(), getFullYear() )
 */
+const myDate = new Date();
+console.log("Day: " + myDate.getDate())
+console.log("Month:", myDate.getMonth() + 1)
+console.log("Year: " + myDate.getFullYear())
 
 // ============================================================
 // TODO-5: ARRAY + SPREAD — find MIN and MAX from 10 numbers
@@ -90,6 +94,7 @@ Task:
 3) Display both values.
 */
 
+
 // ===================================================================
 // TODO-6: EXCEPTIONS — try/catch/finally with EMPTY ARRAY edge case
 // ===================================================================
@@ -100,6 +105,7 @@ Task:
 3) Handle the error using try { ... } catch (e) { ... } finally { ... } and log messages
    in each block so you can see the flow of control.
 */
+
 
 // ===================================================================================
 // TODO-7: REGEX + forEach — find words containing 'ab' and log matches from the list
